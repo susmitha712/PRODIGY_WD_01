@@ -1,0 +1,180 @@
+
+nav{
+   
+    display: flex;
+    margin-right: 50%;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(1, 0, 0);
+    width: 100%;
+    height:80px;
+    gap: 40px;
+    padding-top:15px;
+    padding-bottom: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index:1000;
+    justify-content: space-between;
+}
+ nav a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding-top: 5%;
+    position:relative;
+}
+body{
+    
+    margin: 0%;
+    padding-top: 80px;
+}
+h1{
+    padding-top: 40px;
+    text-align: center;
+    color: rgb(42, 255, 248);
+    font-size: 70px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+nav a:hover{
+    color:aqua;
+}
+nav h2:hover{
+    color: rgb(17, 0, 255);
+}
+nav a::before{
+    content: '';
+    position:absolute;
+    top: 100%;
+    left:0;
+    width:0;
+    height:2px;
+    background: rgb(29, 9, 174);
+    transition:width 0.3s;
+}
+nav a:hover::before{
+    width:100%;
+    background: white;
+}
+
+h2{
+   color: white;
+   text-align: center;
+   justify-content: center;
+}
+
+
+.register {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #10cdc1;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: background-color 0.3s ease;
+}
+
+.register::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+    left: -50%;
+    right: -50%;
+    top: -150%;
+    bottom: -150%;
+    background-color: rgba(255, 255, 255, 0.1);
+    line-height: 8.34em;
+    transform: scale(0, 0);
+    transition: transform 0.3s ease;
+}
+
+.register:hover::after {
+    transform: scale(1, 1);
+}
+
+.register:hover {
+    background-color: #810bca;
+}
+.container{
+    margin-top:50px;
+    display: flex;
+}
+.container .card{
+    margin: 50px;
+    text-align: center;
+    overflow: hidden;
+    height: 400px;
+    box-shadow: 5px 5px 20px black;
+    display: flex;
+    width:590px;
+}
+.card-title {
+    height: auto; /* Updated height to accommodate both text and button */
+    width: 100%; /* Ensure it covers the full width of the card */
+    padding: 10px;
+    box-sizing: border-box;
+    position: absolute;
+    background: rgba(27, 27, 27, 0.5);
+    color: azure;
+    bottom: 0; /* Adjusted bottom position */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.container h2{
+    margin:10px;
+
+}
+span{
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+.card:hover{
+    cursor:pointer; 
+}
+img{
+    height:450px;
+    border-radius: 3px;
+    background: transparent;
+}
+.card-title p {
+    margin-bottom: 20px; /* Added margin to space out the text and button */
+    margin-right:20px;
+    justify-content: center;
+    text-align: center;
+}
+.card:hover .p{
+    bottom:120px;
+    background: black;
+    height:190px;
+}
+.card:hover p{
+    opacity:1;
+    visibility: visible;
+}
+.card:hover .card-title {
+    opacity: 1;
+    visibility: visible;
+}
+.card {
+    display: inline-block;
+    padding: 20px;
+    background-color: lightblue;
+    border: 1px solid blue;
+    transition: transform 0.1s;
+}
+
+.card img {
+    transition: transform 0.3s ease-in-out; /* Smooth transition for transform property */
+}
+
+.card:hover img {
+    transform: scale(1, 1) rotate(1deg); /* Scale and rotate the image on hover */
+}
+.social-icons a:hover {
+    color: #5dfcff; /* Change the color on hover */
+    transform: scale(1.2); /* Scale up the icon on hover */
+}
