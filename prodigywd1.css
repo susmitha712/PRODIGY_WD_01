@@ -1,6 +1,5 @@
 
 nav{
-   
     display: flex;
     margin-right: 50%;
     align-items: center;
@@ -112,14 +111,14 @@ h2{
     width:590px;
 }
 .card-title {
-    height: auto; /* Updated height to accommodate both text and button */
-    width: 100%; /* Ensure it covers the full width of the card */
+    height: auto; 
+    width: 100%; 
     padding: 10px;
     box-sizing: border-box;
     position: absolute;
     background: rgba(27, 27, 27, 0.5);
     color: azure;
-    bottom: 0; /* Adjusted bottom position */
+    bottom: 0; 
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease;
@@ -141,7 +140,7 @@ img{
     background: transparent;
 }
 .card-title p {
-    margin-bottom: 20px; /* Added margin to space out the text and button */
+    margin-bottom: 20px; 
     margin-right:20px;
     justify-content: center;
     text-align: center;
@@ -168,13 +167,13 @@ img{
 }
 
 .card img {
-    transition: transform 0.3s ease-in-out; /* Smooth transition for transform property */
+    transition: transform 0.3s ease-in-out; 
 }
 
 .card:hover img {
-    transform: scale(1, 1) rotate(1deg); /* Scale and rotate the image on hover */
+    transform: scale(1, 1) rotate(1deg); 
 }
 .social-icons a:hover {
-    color: #5dfcff; /* Change the color on hover */
-    transform: scale(1.2); /* Scale up the icon on hover */
+    color: #5dfcff; 
+    transform: scale(1.2);
 }
