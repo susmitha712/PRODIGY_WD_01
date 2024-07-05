@@ -177,3 +177,19 @@ img{
     color: #5dfcff; 
     transform: scale(1.2);
 }
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+.social-icons a {
+    text-decoration: none;
+    color: inherit;
+    font-size: 2rem;
+}
+#navbar h2 {
+    color: white; 
+    transition: color 0.3s ease-in-out; 
+}
